@@ -200,19 +200,42 @@
 			<img src="img/screenshot1.png" width="300" />
 		</div>
 		<div id="desc1">
-			<p class="desc">test</p>
+			<p class="desc">
+				The dot sheet list screen (EntriesController.swift). This screen houses all the dot sheets created by the user.
+				Dot sheets are lists of coordinates which a performer marches between during the field show. Note: All dot sheets must have a unique name.
+				To create a new sheet, tap the plus button in the upper right-hand corner. To edit an existing sheet, swipe right on its title.
+				To delete a dot sheet, simply swipe left and hit the red delete button.
+			</p>
 		</div>
 		<div id="screen2">
 			<img src="img/screenshot2.png" width="300" />
 		</div>
 		<div id="desc2">
-			<p class="desc">test</p>
+			<p class="desc">
+				The coordinate editor (NewDotController.swift). This screen is responsible for displaying all of the coordinates contained in a given dot sheet.
+				Each coordinate can be defined by a block of UI elements which are repeated across this screen.
+				Every coordinate has a label, denoted by the "#" sign. By changing this text field to something like "6A," a subset will be created and the following coordinate labels will be adjusted.
+				"S2S" refers to the side-to-side component of the coordinate, while "F2B" refers to the front-to-back component.
+				To indicate a component as "on" a yardline or hash, leave the corresponding text field blank. If "in" or "out"
+				is chosen, however, the text field cannot be empty.
+			</p>
+			<p class="desc">To indicate a coodinate like this, see pictured set 2A:</p>
+			<p class="desc">side 1: 3 steps inside the 35 yardline</p>
+			<p class="desc">4.25 steps in front front hash</p>
+			<p class="desc">16 count move</p>
 		</div>
 		<div id="screen3">
 			<img src="img/screenshot3.png" width="300" />
 		</div>
 		<div id="desc3">
-			<p class="desc">test</p>
+			<p class="desc">
+				The coordinate viewer (ViewController.swift). This screen displays each coordinate of the dot sheet.
+				The default information, like ending position, set number, and counts is given at the top of the screen.
+				The middle section displays all of the midsets for each count of the move. For example, an 8 count move will have
+				8 different checkpoints -- one for each step single-time. The bottom section displays the displacement vector
+				for the total move, as well as the step size. "X.XX to-five" indicates the number of steps per 5 yards. "ZZ.Z st/count"
+				denotes the number of 22.5" steps one must take each count to reach the final position.
+			</p>
 		</div>
 		<div id="footer">
 			<p class="details">© 2019 Julian Quevedo</p>
